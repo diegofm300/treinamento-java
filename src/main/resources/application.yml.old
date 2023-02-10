@@ -1,0 +1,19 @@
+spring:
+  server:
+    port: 8081
+  datasource:
+    url: jdbc:h2:mem:treinamentojava
+    username: user
+    password:
+    driverClassName: org.h2.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+    show-sql: true
+    properties.hibernate.format_sql: true
+    generate-ddl: true
+    defer-datasource-initialization: true
+
+  h2:
+    console.enabled: true

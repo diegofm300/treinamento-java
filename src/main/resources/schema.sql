@@ -1,0 +1,1 @@
+create table clientes  (id uuid default random_uuid(), nome varchar (200) not null, cpf varchar (40) not null, data_nascimento date, endereco varchar(100), primary key (id), constraint cpf_unico unique(cpf));
