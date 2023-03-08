@@ -1,1 +1,2 @@
 create table clientes  (id uuid default random_uuid(), nome varchar (200) not null, cpf varchar (40) not null, data_nascimento date, endereco varchar(100), primary key (id), constraint cpf_unico unique(cpf));
+create table usuario (id uuid default random_uuid(), firstname varchar (100) , lastname varchar (60) , email varchar (100) not null, password varchar (100) not null, role varchar(30) not null, primary key (id));
